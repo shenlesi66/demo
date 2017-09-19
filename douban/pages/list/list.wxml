@@ -1,0 +1,6 @@
+<import src="../template/movieItem.wxml"/>
+<view class="contains">
+  <block wx:for="{{flims}}" wx:key="item">
+    <template is="movieItem" data="{{...item}}"></template>
+  </block>
+</view>

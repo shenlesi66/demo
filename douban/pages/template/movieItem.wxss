@@ -1,0 +1,11 @@
+/**movieItem.wxss**/
+.item_H{
+  display: inline-block;
+  width: 30%;
+  height: 300rpx;
+  font-size: 24rpx; 
+}
+.item_H_img {
+  width: 100%;
+  height: 100%;
+}

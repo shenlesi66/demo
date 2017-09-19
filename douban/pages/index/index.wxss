@@ -1,0 +1,40 @@
+/**index.wxss**/
+.item_H{
+  margin-right: 5%
+}
+.container{
+  background-color: #efefef;
+}
+.page-section{
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.page-section-title{
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  line-height: 32rpx;
+}
+.page-section-title::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border: 1px solid #2aac5e;
+  margin-right: 6px;
+  background-color: #2aac5e;
+}
+.page-section-title-left{
+  display: inline-block;  
+  font-size: 28rpx;
+}
+.page-section-title-more{
+  float: right;
+  color:#2aac5e;
+  font-size:0.6rem;
+  line-height:1.5;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}

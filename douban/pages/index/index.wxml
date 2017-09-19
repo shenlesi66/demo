@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<import src="../template/movieItem.wxml"/>
+<view class='container'>
+  <view class="page-section" wx:for="{{films}}" wx:key="id">
+    <view class='page-section-title'>
+      <text class="page-section-title-left">{{item.title}}</text> 
+      <navigator class='page-section-title-more' url='../list/list?type={{item.type}}'>
+        <text>更多>></text>      
+      </navigator>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <block wx:for="{{item.data}}" wx:key="data">
+         <template is="movieItem" data="{{...item}}"></template>       
+      </block>
+    </scroll-view>
+  </view>
+</view>

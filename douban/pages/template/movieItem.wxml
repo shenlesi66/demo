@@ -1,0 +1,8 @@
+<template name="movieItem">
+  <view class="item_H" data-id="{{id}}" data-title="{{title}}" bindtap='detail'>
+      <image class="item_H_img" src='{{images.large}}'></image>   
+      <view class="item_H_title">{{title}}</view> 
+      <text wx:if="{{rating.average>0}}" class='film-star {{rating.star}}'></text> 
+      <text class='film-average'>{{rating.average>0?rating.average:"暂无评分"}}</text> 
+  </view>
+</template>
